@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    
+<script>
+//Part 2 a nr1 och nr2//
+
+let rad = "" ;
+
+    for( i = 1; i <= 10; i++){
+        if( i % 2 === 0 ) {
+            rad += ("X")
+        }   else {
+            rad += ("O")
+        } 
+    } ; console.log(rad)
+
+//Part 2b//
+
+for( let i = 1; i <= 20; i++) {
+    let spaces = Math.floor(Math.random() * 5) + 1;
+    document.write("O" + "&nbsp;".repeat(spaces)); 
+}
+
+//Part 2c//
+
+let animals = ["cat", "dog", "fish", "bird", "fox"];
+
+animals.forEach(word => {
+    word.split("").forEach(letter => console.log(letter));
+});
+
+</script>
+
+
+
+</body>
+</html>
